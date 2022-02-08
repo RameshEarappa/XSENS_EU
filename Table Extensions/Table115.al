@@ -146,5 +146,11 @@ tableextension 50024 "Sales Cr.Memo Line" extends "Sales Cr.Memo Line"
             CaptionML = ENU = 'No. of Periods',
                         NLD = 'Aantal periodes';
         }
+        field(87004; "Shortcut Dimension 4 Code"; Code[20])
+        {
+            CaptionClass = '1,2,4';
+            FieldClass = FlowField;
+            CalcFormula = lookup("Dimension Set Entry"."Dimension Value Code" where("Dimension Set ID" = field("Dimension Set ID"), "Global Dimension No." = const(4)));
+        }
     }
 }

@@ -171,5 +171,6 @@ tableextension 50012 "Sales Line" extends "Sales Line"
             Description = 'No longer used';
             MinValue = 1;
         }
+        // Filed id 87004 has been used in posted sales invoice line and credit memo line as a flow field.
     }
 }

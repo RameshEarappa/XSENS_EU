@@ -138,6 +138,9 @@ query 50001 "Revenue recognition"
                 column(Shortcut_Dimension_1_Code; "Shortcut Dimension 1 Code")
                 {
                 }
+                column(Shortcut_Dimension_4_Code; "Shortcut Dimension 4 Code")
+                {
+                }
                 dataitem(Customer; Customer)
                 {
                     DataItemLink = "No." = Sales_Invoice_Header."Sell-to Customer No.";
@@ -174,6 +177,7 @@ query 50001 "Revenue recognition"
                             {
                             }
                         }
+
                     }
                 }
             }
